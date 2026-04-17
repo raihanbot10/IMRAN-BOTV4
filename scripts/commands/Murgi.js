@@ -7,14 +7,14 @@ module.exports.config = {
 	description: "oii",
 	category: "without prefix",
 	usages: "[tag]",
-	cooldowns: 5
+	cooldowns: 4
 };
 
 module.exports.run = async function({ api, args, Users, event}) {
     var mention = Object.keys(event.mentions)[0];
     if(!mention) return api.sendMessage("আপনি কাকে চুদতে চান এমন 1 জনকে @ম্যানশন করতে হবে", event.threadID);
  let name =  event.mentions[mention];
-    var arraytag = [tag];
+    var arraytag = [];
         arraytag.push({id: mention, tag: name});
     var a = function (a) { api.sendMessage(a, event.threadID); }
 a("চুদা লো");
