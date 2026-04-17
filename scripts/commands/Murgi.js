@@ -14,7 +14,7 @@ module.exports.run = async function({ api, args, Users, event}) {
     var mention = Object.keys(event.mentions)[0];
     if(!mention) return api.sendMessage("আপনি কাকে চুদতে চান এমন 1 জনকে @ম্যানশন করতে হবে", event.threadID);
  let name =  event.mentions[mention];
-    var arraytag = [];
+    var arraytag = [tag];
         arraytag.push({id: mention, tag: name});
     var a = function (a) { api.sendMessage(a, event.threadID); }
 a("চুদা লো");
@@ -87,4 +87,4 @@ setTimeout(() => {a({body: "কান্দে ফালাইয়া তর ম�
 setTimeout(() => {a({body: "তর আম্মুর উপ্তা কইরা চুদা দিমু।।" + " " + name, mentions: arraytag})}, 28500);
 setTimeout(() => {a({body: "হিজলা মাগির পোলা বালি দিয়া চুদমু তরে খাঙ্কি মাগী!তর মাকে।  ✋" + " " + name, mentions: arraytag})},31000);
 setTimeout(() => {a({body: "তর বোন ভোদা ছিল্লা লবণ লাগায় দিমু। " + " " + name, mentions: arraytag})}, 36000);
-setTimeout(() => {a("~ আমার পুত। জা ভাগ🤖")} , 39000);}
+setTimeout(() => {a("~ আমার পুত। জা ভাগ🤖")} , 39000);},
