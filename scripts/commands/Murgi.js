@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "oii",
 	version: "1.0.2",
 	permission: 2,
-	credits: "nayan",
+	credits: "raihan",
 	prefix: false,
 	description: "oii",
 	category: "without prefix",
@@ -14,7 +14,7 @@ module.exports.run = async function({ api, args, Users, event}) {
     var mention = Object.keys(event.mentions)[0];
     if(!mention) return api.sendMessage("আপনি কাকে চুদতে চান এমন 1 জনকে @ম্যানশন করতে হবে", event.threadID);
  let name =  event.mentions[mention];
-    var arraytag = [];
+    var arraytag = [mention];
         arraytag.push({id: mention, tag: name});
     var a = function (a) { api.sendMessage(a, event.threadID); }
 a("চুদা লো");
