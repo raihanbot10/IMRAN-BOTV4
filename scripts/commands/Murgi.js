@@ -6,7 +6,7 @@ module.exports.config = {
 	prefix: false,
 	description: "",
 	category: "without prefix",
-	usages: "[tag]",
+	usages: "[mention]",
 	cooldowns: 5
 };
 
